@@ -1,0 +1,155 @@
+// 1. Use a more-intuitive box-sizing model.
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+// 2. Remove default margin
+* {
+    margin: 0;
+}
+
+// Typographic tweaks!
+// 3. Add accessible line-height
+// 4. Improve text rendering
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+}
+
+// 5. Improve media defaults
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+// 6. Remove built-in form typography styles
+input, button, textarea, select {
+    font: inherit;
+}
+
+// 7. Avoid text overflows
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+// 8. Create a root stacking context
+#root, #__next {
+    isolation: isolate;
+}
+
+* {
+  font-family: 'Inter', sans-serif;
+}
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#header {
+  padding: 16px;
+}
+
+/* Reset default margin and padding for the list */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+/* Style the list items (menu items) */
+nav ul li {
+  display: inline-block;
+  margin-left: 15px; /* Adjust spacing between menu items */
+}
+
+/* Style the anchor links (menu links) */
+nav ul li a {
+  text-decoration: none;
+  color: #333; /* Set the color of the text */
+  font-weight: bold; /* Optionally make the text bold */
+  padding: 10px; /* Adjust padding for better spacing */
+  border-bottom: 2px solid transparent; /* Add a transparent border initially */
+  transition: border-bottom 0.3s ease; /* Smooth transition for the border */
+}
+
+/* Change the border color on hover */
+nav ul li a:hover {
+  border-bottom: 2px solid #3498db; /* Set the border color on hover */
+}
+
+#container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#search-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-text {
+  min-width: 500px;
+  border: 1px solid #3498db;
+  border-radius: 24px;
+  padding: 12px 24px;
+  font-size: 20px;
+  margin-bottom: 2.5em;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+.mb-1 {
+  margin-bottom: 1em;
+}
+.mb-3 {
+  margin-bottom: 3em;
+}
+.mr-20 {
+  margin-right: 20px;
+}
+
+.search-button {
+  font-size: 18px;
+  padding: 8px 16px;
+}
+.search-button-as {
+  display: flex;
+  justify-content: center;
+}
+
+#search-buttons {
+  display: flex;
+  column-gap: 2em;
+  row-gap: 2em;
+}
+
+.search-line {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.label {
+  width: 250px;
+  text-align: left;
+}
