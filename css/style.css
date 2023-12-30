@@ -136,6 +136,11 @@ h1 {
   display: flex;
   justify-content: center;
 }
+.search-button-advanced {
+  background-color: #4d90fe;
+  color: white;
+  border-color: #4d90fe;
+}
 
 #search-buttons {
   display: flex;
